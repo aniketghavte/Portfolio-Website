@@ -1,4 +1,5 @@
 import React from 'react'
+import {useState , useEffect} from 'react'
 import {motion} from 'framer-motion';
 import {images} from '../../constants'
 import './Header.scss'
@@ -16,6 +17,41 @@ const scaleVariants = {
   }
 }
 const Header = () => {
+
+  // const [loopNum , setLoopNum] = useState(0);
+  // const [isDeleting, setIsDeleting]= useState(false);          
+  // const toRotate = ["Software Developer", "React Developer","UI/UX Developer"];
+  // const [text, setText] = useState(300 - Math.random() * 100 );
+  // const [delta , setDelta] = useState()
+  // const period = 200;
+
+  // useEffect ( () => {
+  //     let ticker = setInterval(() => {
+  //         tick();
+  //     }, delta);
+
+  //     return () => {clearInterval(ticker)};
+  // },[text])
+
+  // const tick = () => {
+  //     let i = loopNum % toRotate.length;
+  //     let fullText = toRotate[i];
+  //     let updateText = isDeleting ? fullText.substring(0, text.length-1):fullText.substring(0,text.length+1);
+
+  //     setText(updateText);
+  //     if(isDeleting){
+  //         setDelta(prevDelta => prevDelta/2);
+  //     }
+  //     if (!isDeleting && updateText === fullText){
+  //         setIsDeleting(true);
+  //         setDelta(period);
+  //     }else if (isDeleting && updateText === ''){
+  //         setIsDeleting(false);
+  //         setLoopNum(loopNum +1);
+  //         setDelta(200);
+  //     }
+  // }
+
   return (
     <div id='home' className='app__header app__flex'>
       <motion.div 
@@ -29,19 +65,20 @@ const Header = () => {
               <span>👋</span>
               <div style={{marginLeft:20}}>
                 <p className='p-text'>Hello, I'm</p>
-                <h1 className='head-text'>Aniket Ghavte</h1>
+                <h1 className='head-text'>Aniket Ghavte </h1>
               </div>
           </div>
 
           <div className='tag-cmp app__flex'>
             <p className='p-text'>Software Developer</p>
-            <p className='p-text'>React</p>
-            <p className='p-text'>UI/UX</p>
+            <p className='p-text'> React </p>
+            <p className='p-text'> UI/UX </p>
+            
             
           </div>
         </div>
       </motion.div>
-
+      
       {/* ================== */}
       <motion.div
           whileInView={{opacity: [0,1], delayChildren:1}}
