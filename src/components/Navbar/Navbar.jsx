@@ -25,8 +25,6 @@ const Navbar = () => {
                     <div/>
                     <a href={`#${item}`}>{item}</a>
                 </li>
-                
-
             ))}
         </ul>
         <div className='app__social-pvt'>
