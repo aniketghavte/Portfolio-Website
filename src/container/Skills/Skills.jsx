@@ -14,19 +14,19 @@ const Skills = () => {
   const [skills, setSkills] = useState([]);
 
   // USED FOR FETCHING DATA FROM SANITY OF SCHEME WORKS
-  useEffect(() => {
-    const query = '*[_type == "experiences"]';
-    const SkillsQuery = '*[_type == "skills"]';
+      useEffect(() => {
+        const query = '*[_type == "experiences"]';
+        const SkillsQuery = '*[_type == "skills"]';
 
-    client.fetch(query)
-    .then((data) => {
-      setExperiences(data);
-    })
-    client.fetch(SkillsQuery)
-    .then((data) => {
-      setSkills(data);
-    })
-  }, [])
+        client.fetch(query)
+        .then((data) => {
+          setExperiences(data);
+        })
+        client.fetch(SkillsQuery)
+        .then((data) => {
+          setSkills(data);
+        })
+      }, [])
 
   return (
     <>

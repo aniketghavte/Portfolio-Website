@@ -12,6 +12,7 @@ import {
 
 const Navbar = () => {
 
+    // State for Menu
     const [toggle, setToggle] = useState(false);
 
   return (
@@ -19,14 +20,14 @@ const Navbar = () => {
         <div className='app__navbar-logo'>
          <h2>Aniket Ghavte</h2>
         </div>
-        <ul className='app__navbar-links'>
-            {['home', 'about','work', 'skills', 'contact'].map((item)=> (
-                <li className='app__flex p-text' key={`link-${item}`}>
-                    <div/>
-                    <a href={`#${item}`}>{item}</a>
-                </li>
-            ))}
-        </ul>
+            <ul className='app__navbar-links'>
+                {['home', 'about','work', 'skills', 'contact'].map((item)=> (
+                    <li className='app__flex p-text' key={`link-${item}`}>
+                        <div/>
+                        <a href={`#${item}`}>{item}</a>
+                    </li>
+                ))}
+            </ul>
         <div className='app__social-pvt'>
             <div>
             {/* <a href='#resources' ><AiOutlineCodeSandbox /></a> */}

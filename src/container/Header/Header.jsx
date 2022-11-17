@@ -18,6 +18,7 @@ const scaleVariants = {
 }
 const Header = () => {
 
+  // some other desings
   // const [loopNum , setLoopNum] = useState(0);
   // const [isDeleting, setIsDeleting]= useState(false);          
   // const toRotate = ["Software Developer", "React Developer","UI/UX Developer"];
@@ -42,6 +43,7 @@ const Header = () => {
   //     if(isDeleting){
   //         setDelta(prevDelta => prevDelta/2);
   //     }
+
   //     if (!isDeleting && updateText === fullText){
   //         setIsDeleting(true);
   //         setDelta(period);
