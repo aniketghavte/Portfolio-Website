@@ -7,7 +7,7 @@ import {client} from '../../client';
 
 import './Footer.scss'
 
-const Footer = () => {
+const Contact = () => {
 
     const [formData, setFormData] = useState({name : '', email:' ', message:''});
     const [isFormSubmitted, setIsFormSubmitted] = useState(false);
@@ -24,14 +24,14 @@ const Footer = () => {
     const handleSubmit =() => {
         setLoading(true);
 
-        const contact = {
-          _type: 'contact',
+        const Footer = {
+          _type: 'Footer',
           name: name,
           email: email,
           message: message,
         }
 
-        client.create(contact)
+        client.create(Footer)
         .then(() => {
           setLoading(false);
           setIsFormSubmitted(true);
@@ -90,4 +90,4 @@ const Footer = () => {
   )
 }
 
-export default AppWrap(Footer, 'footer')
+export default AppWrap(Contact, 'contact')

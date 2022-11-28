@@ -2,7 +2,7 @@
 import React, { useEffect } from 'react'
 import './App.scss'
 
-import {About, Footer, Header, Skills, Testimonials, Work, Resources} from './container';
+import {About, Contact, Header, Skills, Testimonials, Work, Resources} from './container';
 import {Navbar} from './components';
 import {
   BrowserRouter as Router,
@@ -34,7 +34,7 @@ function App() {
               <Work/>
               <Skills/>
               {/* <Testimonials/> */}
-              <Footer/>
+              <Contact/>
               
                 </Route>
         </Switch>
