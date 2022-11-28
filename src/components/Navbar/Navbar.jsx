@@ -31,7 +31,7 @@ const Navbar = () => {
         <div className='app__social-pvt'>
             <div>
             {/* <a href='#resources' ><AiOutlineCodeSandbox /></a> */}
-            <Link to="/Resources"><AiOutlineCodeSandbox /></Link>
+            <Link to=""><AiOutlineCodeSandbox /></Link>
             
             </div>
            
