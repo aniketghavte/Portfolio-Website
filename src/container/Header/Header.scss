@@ -63,6 +63,8 @@
         width: 100%;
         margin-right: 0rem;
     }
+
+
     
 }
 
@@ -79,6 +81,7 @@
         border-radius: 15px;
         flex-direction: row;
         width: auto;
+        margin-trim: 20px;
         box-shadow:  0 0 20px rgba(0, 0, 0, 0.133); 
 
         &:hover{
@@ -102,6 +105,23 @@
         }
 
     }
+    .badge-cmp-last{
+        padding: 1rem 2rem;
+        border: var(--white-color);
+        border-radius: 15px;
+        flex-direction: row;
+        width: 100%;
+        box-shadow:  0 0 20px rgba(0, 0, 0, 0.133); 
+        flex-direction: column;
+        margin-top: 6rem;
+
+        p{
+            width: 100%;
+            text-transform: uppercase;
+            text-align: left;
+        }
+
+    }
     span{
         font-size: 3.5rem;
 
@@ -116,13 +136,14 @@
     }
 }
 .app__header-circles{
-    flex: 0.75;
+    flex: 0.55;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: flex-start;
     margin-left: 1rem;
     height: 100%;
+    padding-right: -40%;
 
     div{
         width: 100px;
@@ -140,7 +161,7 @@
     div:nth-child(1){
         width: 100px;
         height: 100px;
-        margin: -1rem;
+        margin: -4rem;
     }
     div:nth-child(2){
         margin: 1.5rem;
@@ -154,7 +175,8 @@
     div:nth-child(4){
         width: 70px;
         height: 70px;
-        margin: -2rem;
+        margin: -3rem;
+        margin-bottom: 10%;
     }
 
     @media screen  and (min-width:2000px) {
@@ -190,14 +212,19 @@
     height: 100%;
     display: flex;
     justify-content: flex-end;
-    align-items: flex-end;
+    margin-top: 1%;
     position: relative;
+    align-content: space-around;
+    height: 120%;
+    display: flex;
+
     
 
     img{
-        width: 95%;
+        width: 85%;
         object-fit: contain;
         margin-bottom: 15%;
+        margin-right: 5%;
         z-index: 1;
     }
 
@@ -215,4 +242,7 @@
     @media screen and (max) {
         margin:  2rem 0;
     }
+}
+.type-writer {
+    color: var(--secondary-color);
 }

@@ -8,16 +8,16 @@ const SocialMedia = () => {
   return (
     <div className='app__social'>
        <div>
-           <a href='https://github.com/aniketghavte' alt='hh'><BsGithub /></a>
+           <a href='https://github.com/aniketghavte' target="_blank" alt='hh'><BsGithub /></a>
         </div>
         <div>
-           <a href='https://twitter.com/aniket_ghavte' alt='hh'><BsTwitter /></a>
+           <a href='https://twitter.com/aniket_ghavte' target="_blank" alt='hh'><BsTwitter /></a>
         </div>
         <div>
-           <a href='https://www.linkedin.com/in/aniketghavte/' alt='hh'><FaLinkedin /></a>
+           <a href='https://www.linkedin.com/in/aniketghavte/' target="_blank" alt='hh'><FaLinkedin /></a>
         </div>
         <div>
-           <a href='https://www.instagram.com/aniket.ghavte/' alt='hh'><BsInstagram /></a>
+           <a href='https://www.instagram.com/aniket.ghavte/' target="_blank" alt='hh'><BsInstagram /></a>
         </div>
         
 

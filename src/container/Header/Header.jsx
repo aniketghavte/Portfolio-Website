@@ -5,6 +5,8 @@ import {images} from '../../constants'
 import './Header.scss'
 import {AppWrap} from '../../wrapper';
 
+import Typewriter from 'typewriter-effect';
+
 const scaleVariants = {
   whileInView:{
     scale: [0,1],
@@ -58,7 +60,7 @@ const Header = () => {
     <div id='home' className='app__header app__flex'>
       <motion.div 
         whileInView={{x: [-100,0],opacity: [0,1]}}
-        whileHover={{scale:1.05}}
+        whileHover={{scale:1}}
         transition={{duration:1, type:'tween'}}
         className='app__header-info'
       >
@@ -78,6 +80,20 @@ const Header = () => {
             
             
           </div>
+
+          <div className='badge-cmp-last app__flex'>
+              
+              <div className='p-text'>
+              <Typewriter
+                    options={{
+                      strings: ['ReactJs', 'Android', 'UI/UX' , 'React Native', 'NodeJs', 'Java', 'JavaScript'],
+                      autoStart: true,
+                      loop: true,
+                    }}
+                  />
+              </div>
+          </div>
+          
         </div>
       </motion.div>
       
