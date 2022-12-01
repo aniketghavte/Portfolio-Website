@@ -21,22 +21,23 @@ const Contact = () => {
       setFormData({...formData, [name]:value});
     }
 
-    const handleSubmit =() => {
-        setLoading(true);
-
-        const Footer = {
-          _type: 'Footer',
-          name: name,
-          email: email,
-          message: message,
-        }
-
-        client.create(Footer)
+    const handleSubmit = () => {
+      setLoading(true);
+  
+      const contact = {
+        _type: 'contact',
+        name: formData.name,
+        email: formData.email,
+        message: formData.message,
+      };
+  
+      client.create(contact)
         .then(() => {
           setLoading(false);
           setIsFormSubmitted(true);
         })
-    }
+        .catch((err) => console.log(err));
+    };
 
   return (
     <>
