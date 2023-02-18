@@ -86,7 +86,7 @@ const Header = () => {
               <div className='p-text'>
               <Typewriter
                     options={{
-                      strings: ['ReactJs', 'Android', 'UI/UX' , 'React Native', 'NodeJs', 'Java', 'JavaScript'],
+                      strings: ['ReactJs', 'Android', 'UI/UX' , 'React Native', 'NodeJs', 'Java', 'JavaScript', 'MonogoDB', 'Express'],
                       autoStart: true,
                       loop: true,
                     }}
@@ -120,7 +120,7 @@ const Header = () => {
           className='app__header-circles'
       >
         
-        {[images.node, images.react1, images.git,images.js].map((circle,index) => (
+        {[images.mongodb, images.react1, images.git,images.js].map((circle,index) => (
           <div className='circle-cmp app-flex' key={`circle-${index}`}>
               <img src={circle} alt='circle' />
           </div>

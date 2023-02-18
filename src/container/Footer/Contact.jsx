@@ -9,7 +9,7 @@ import './Footer.scss'
 
 const Contact = () => {
 
-    const [formData, setFormData] = useState({name : '', email:' ', message:''});
+    const [formData, setFormData] = useState({name : '', email:'', message:''});
     const [isFormSubmitted, setIsFormSubmitted] = useState(false);
     const [loading, setLoading] = useState(false);
 
@@ -22,9 +22,12 @@ const Contact = () => {
     }
 
     const handleSubmit = () => {
-      setLoading(true);
-  
-      const contact = {
+
+      if(formData.name || formData.email || formData.message === ''){
+        
+      }else {
+         setLoading(true);
+        const contact = {
         _type: 'contact',
         name: formData.name,
         email: formData.email,
@@ -37,6 +40,12 @@ const Contact = () => {
           setIsFormSubmitted(true);
         })
         .catch((err) => console.log(err));
+      }
+     
+
+    
+  
+
     };
 
   return (
